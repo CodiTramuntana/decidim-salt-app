@@ -1,0 +1,5 @@
+ca:
+  decidim:
+    core:
+      actions:
+        unauthorized: No pots votar perquè no t'has verificat, segueix les instruccions que hi ha a l'apartat de la votació
