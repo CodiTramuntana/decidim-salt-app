@@ -2,11 +2,10 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION= '0.16.0'
+DECIDIM_VERSION= '0.16.1'
 
 gem 'decidim', DECIDIM_VERSION
-# gem 'decidim-file_authorization_handler', path: '../decidim-file_authorization_handler.codit'
-gem 'decidim-file_authorization_handler', git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git", :branch => 'fix/ensure_all_data_properly_encoded'
+gem 'decidim-file_authorization_handler', git: "https://github.com/MarsBased/decidim-file_authorization_handler.git"
 # gem 'decidim-consultations', "~> #{DECIDIM_VERSION}"
 
 gem 'delayed_job_active_record'
