@@ -1,4 +1,4 @@
-# CoditMultitenantApp developments
+# Decidim APP for Salt
 
 ## Deploying the app
 
