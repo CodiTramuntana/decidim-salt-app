@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION= '0.16.1'
+DECIDIM_VERSION= '0.17.1'
 
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-file_authorization_handler', git: "https://github.com/MarsBased/decidim-file_authorization_handler.git"
