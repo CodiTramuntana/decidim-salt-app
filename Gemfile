@@ -5,7 +5,8 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.19-stable' }
 
 gem 'decidim', DECIDIM_VERSION
-gem 'decidim-file_authorization_handler', git: "https://github.com/MarsBased/decidim-file_authorization_handler.git"
+# IMPORTANT replace the organization from file_authorization_handler to MarsBased, remove the branch key and remove this comment
+gem 'decidim-file_authorization_handler', git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git", branch: "fix/organization_error_on_manage_new_participant"
 # gem 'decidim-consultations', "~> #{DECIDIM_VERSION}"
 
 gem 'delayed_job_active_record'
