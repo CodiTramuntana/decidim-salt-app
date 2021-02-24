@@ -2,11 +2,10 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.19-stable' }
+DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: 'release/0.20-stable' }
 
 gem 'decidim', DECIDIM_VERSION
-# IMPORTANT replace the organization from file_authorization_handler to MarsBased, remove the branch key and remove this comment
-gem 'decidim-file_authorization_handler', git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git", branch: "fix/organization_error_on_manage_new_participant"
+gem 'decidim-file_authorization_handler', git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git"
 # gem 'decidim-consultations', "~> #{DECIDIM_VERSION}"
 
 gem 'delayed_job_active_record'
