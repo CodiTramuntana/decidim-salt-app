@@ -17,6 +17,7 @@ Decidim.configure do |config|
     static_map_url: 'https://image.maps.ls.hereapi.com/mia/1.6/mapview',
     here_api_key: Rails.application.secrets.geocoder[:here_api_key]
   }
+
 end
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales

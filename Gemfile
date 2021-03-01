@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: 'release/0.20-stable' }
+DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: 'release/0.21-stable' }
 
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-file_authorization_handler', git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git"
@@ -12,7 +12,7 @@ gem 'delayed_job_active_record'
 gem 'daemons'
 gem "whenever", require: false
 
-gem 'puma', '~> 3.0'
+gem 'puma', '< 5'
 gem 'uglifier', '>= 4.0.0'
 gem 'faker', '~> 1.8.4'
 
