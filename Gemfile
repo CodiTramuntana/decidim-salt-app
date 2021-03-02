@@ -13,6 +13,7 @@ gem 'daemons'
 gem "whenever", require: false
 
 gem 'puma', '< 5'
+gem 'rails', '< 6'
 gem 'uglifier', '>= 4.0.0'
 gem 'faker', '~> 1.8.4'
 
