@@ -18,18 +18,12 @@ gem 'faker', '~> 1.8.4'
 
 gem 'figaro', '>= 1.1.1'
 
-# Force gem version to fix:
-# undefined method `polymorphic?' for ActiveRecord::Reflection::PolymorphicReflection
-# See: https://github.com/activerecord-hackery/ransack/issues/1039
-gem 'ransack', '2.1.1'
-
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'decidim-dev', DECIDIM_VERSION
 end
 
 group :development do
-  gem 'web-console'
   gem 'listen', '~> 3.1.0'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
