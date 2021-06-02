@@ -14,6 +14,7 @@ gem "whenever", require: false
 
 gem 'puma', '< 5'
 gem 'rails', '< 6'
+gem 'rake'
 gem 'uglifier', '>= 4.0.0'
 
 gem 'figaro', '>= 1.1.1'
