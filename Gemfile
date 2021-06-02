@@ -15,11 +15,11 @@ gem "whenever", require: false
 gem 'puma', '< 5'
 gem 'rails', '< 6'
 gem 'uglifier', '>= 4.0.0'
-gem 'faker', '~> 1.8.4'
 
 gem 'figaro', '>= 1.1.1'
 
 group :development, :test do
+  gem 'faker', '~> 1.9.6'
   gem 'byebug', platform: :mri
   gem 'decidim-dev', DECIDIM_VERSION
 end
