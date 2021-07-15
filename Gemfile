@@ -19,6 +19,7 @@ gem 'rails', '< 6'
 gem 'figaro', '>= 1.1.1'
 
 group :development, :test do
+  gem 'faker', '~> 1.9.6'
   gem 'byebug', platform: :mri
   gem 'decidim-dev', DECIDIM_VERSION
 end
@@ -28,8 +29,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'letter_opener_web', '~> 1.3.0'
-
   gem 'better_errors', '>= 2.3.0'
   gem 'binding_of_caller'
-  gem 'faker', '~> 1.8.4'
 end
