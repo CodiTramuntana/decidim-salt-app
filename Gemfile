@@ -8,14 +8,13 @@ gem 'decidim', DECIDIM_VERSION
 gem 'decidim-file_authorization_handler', git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git"
 # gem 'decidim-consultations', "~> #{DECIDIM_VERSION}"
 
-gem 'delayed_job_active_record'
 gem 'daemons'
+gem 'delayed_job_active_record'
+gem 'puma'
+gem 'uglifier', '>= 4.0.0'
 gem "whenever", require: false
 
-gem 'puma', '< 5'
 gem 'rails', '< 6'
-gem 'uglifier', '>= 4.0.0'
-gem 'faker', '~> 1.8.4'
 
 gem 'figaro', '>= 1.1.1'
 
@@ -32,4 +31,5 @@ group :development do
 
   gem 'better_errors', '>= 2.3.0'
   gem 'binding_of_caller'
+  gem 'faker', '~> 1.8.4'
 end
