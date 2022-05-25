@@ -4,6 +4,10 @@ ruby RUBY_VERSION
 
 DECIDIM_VERSION = { git: 'https://github.com/CodiTramuntana/decidim.git', branch: 'release/0.24-stable' }
 
+gem "actionview", ">= 5.2.7.1"
+gem "actionpack", ">= 5.2.7.1"
+gem "activestorage", ">= 5.2.6.3"
+
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-file_authorization_handler', git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git"
 # gem 'decidim-consultations', "~> #{DECIDIM_VERSION}"
@@ -14,12 +18,13 @@ gem 'puma'
 gem 'uglifier', '>= 4.0.0'
 gem "whenever", require: false
 
-gem 'rails', '< 6'
+
+gem 'rails', '~> 5.2.7.1'
 
 gem 'figaro', '>= 1.1.1'
 
 group :development, :test do
-  gem 'faker', '~> 1.9.6'
+  gem 'faker', "~> 2.19.0"
   gem 'byebug', platform: :mri
   gem 'decidim-dev', DECIDIM_VERSION
 end
